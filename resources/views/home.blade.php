@@ -58,7 +58,7 @@
     <a class="inia" href="#"  data-toggle="dropdown" style="display: inline;">Info</a>
     
     <div class="dropdown-menu asd" aria-labelledby="dropdownMenuLink" ">
-        <a class="dropdown-item" href="#" style="margin: 0px;padding: 0px;">Berita </a><br>
+        <a class="dropdown-item" href="/lamanberita" style="margin: 0px;padding: 0px;">Berita </a><br>
         <a class="dropdown-item" href="#" style="margin: 0px;padding: 0px;">Artikel </a><br>
         <a class="dropdown-item" href="#" style="margin: 0px;padding: 0px;">Laporan Keuangan</a><br>
         <a class="dropdown-item" href="#" style="margin: 0px;padding: 0px;">Inventari Barang </a><br>

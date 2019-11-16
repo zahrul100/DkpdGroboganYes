@@ -1,5 +1,9 @@
 <?php
 
+Route::get('/tes',function () {
+return view('lamanberita');
+
+});
 Route::get('/home','homeController@homes');
 //Harga Controller
 Route::prefix('harga')->group(function(){
@@ -34,5 +38,8 @@ Route::prefix('komentar')->group(function(){
 Route::post('/', 'komentarController@index');
 Route::post('/store','komentarController@store');
 Route::get('/lihat/{id}','komentarController@updates');
-Route::get('/komentar/hapus/{id}', 'komentarController@hapus');
+Route::get('/hapus/{id}', 'komentarController@hapus');
 });
+Route::prefix('lamanberita')->group(function(){
+    Route::get('/', 'lamanberitaController@index');
+    });

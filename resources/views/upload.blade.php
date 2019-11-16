@@ -39,7 +39,7 @@
 						</div>
 					<div class="form-group">
 						<b>Berita</b>
-						<textarea  class="ckeditor" id="ckedtor" class="form-control" name="berita"rows="50" cols="100" ></textarea>
+						<textarea  class="ckeditor" id="ckeditor" class="form-control" name="berita"rows="50" cols="100" ></textarea>
 					</div>
  
 					<input type="submit" value="Upload" class="btn btn-primary">

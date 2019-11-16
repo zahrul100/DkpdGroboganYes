@@ -1,32 +1,10 @@
-.judul{
-    text-align: center;
-    font-family: 'Times New Roman';
-    font-size: 40px;
-}
-
 .kontenberita{
-    border: 2px solid black;
-    margin-bottom: 3%;
+    height: auto;
     margin-left: 10%;
     margin-right: 10%;
+    width: 80%;
+    background-color: whitesmoke;
 }
-
-.isi{
-    text-align: justify;
-    font-family: 'Segoe UI';
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 4%;
-}
-
-.pdf{
-    text-align: center;
-    margin-bottom: 4%;
-    margin-top: 2%;
-    margin-right: 3%;
-}
-
-.pejabat{
-    margin-left: 10%;
-    margin-right: 10%;
-}
+.berita{padding-left: 400px;
+        position: relative;
+        top: -200px;}

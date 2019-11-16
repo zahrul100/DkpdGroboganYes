@@ -20,6 +20,8 @@
 		<input type="submit" value="Simpan Data">
 	</form>
 	@endforeach
+
+	
 </body>
 
 

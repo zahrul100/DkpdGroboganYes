@@ -22,11 +22,13 @@ textarea{
         Judul <input type="text" required="required" name="Judul" value="{{ $p->Judul}}"> <br/>
         
 		<img src="{{ url('/data_file/'.$p->file) }}">
-        <textarea rows="50" cols="100" class="span12" name="berita" required>
+        <textarea class="ckeditor" id="ckedtor" rows="50" cols="100" class="span12" name="berita" required>
         {{$p->berita}}</textarea>  
 
 
 		<input type="submit" value="Simpan Data">
+		
+	<script src="//cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
 	</form>
 	@endforeach
 </body>

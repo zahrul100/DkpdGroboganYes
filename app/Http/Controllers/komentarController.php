@@ -32,13 +32,9 @@ class komentarController extends Controller
 
     public function hapus($id)//untuk menghapus komentar yang tersedia 
 	{
-        $komentar =komentar::where('id_komentar',$id)->get();
-        foreach( $komentar as $komentaar)
-        {
-            $link="/upload/lihat/".$komentaar->id_berita;
             komentar::where('id_komentar', $id)->delete();
-            return redirect($link);
-        }
+            return redirect()->back();
+        
     }
 }
 
