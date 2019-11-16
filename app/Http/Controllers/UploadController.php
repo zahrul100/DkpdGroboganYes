@@ -6,7 +6,8 @@ use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Redirect;
 use App\Gambar;
- 
+use App\berita; 
+use App\komentar; 
 class UploadController extends Controller
 {
 	public function upload(){
@@ -52,15 +53,14 @@ class UploadController extends Controller
 	}
 
 	public function hapus($id){
-		DB::table('berita')->where('id',$id)->delete();
+		berita::where('id',$id)->delete();
 		return redirect('/upload');
 	}
 	public function lihat($id){
 
-		$gambar =DB::table('berita')->where('id',$id)->get();
-		$komentar = DB::table('komentar')->where('id_berita', $id)->get();
-		foreach( $gambar as $gambaar)
-		 $gambaar->berita;
+		$gambar =berita::where('id',$id)->get();
+		$komentar = komentar::where('id_berita', $id)->get();
+		
 		return view('berita',['berita' => $gambar, 'komentar' =>$komentar]);
 
 }
@@ -74,7 +74,7 @@ class UploadController extends Controller
 	
 		$waktu = Carbon::now()->toDateTimeString();
 
-		DB::table('berita')->where('id',$request->id)->update
+		berita::where('id',$request->id)->update
 		([
 
 		'Judul' => $request->Judul,

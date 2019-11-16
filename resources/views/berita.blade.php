@@ -17,6 +17,7 @@ th, td {
 }
  </style>
 </head>
+<a href="/upload"><button class="btn btn-primary">Back</button></a>
 <body>
 	<div class="row">
 		<div class="container">

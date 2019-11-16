@@ -25,7 +25,7 @@ class hargaController extends Controller
     public function store(Request $request)
 	{
 	// insert data ke table harga
-	DB::table('harga')->insert
+	harga::create
 	([
 		
 		'nama_pangan' => $request->nama_pangan,
@@ -40,7 +40,7 @@ class hargaController extends Controller
 
 	public function updates(Request $request)
 	{
-	DB::table('harga')->where('id_harga',$request->id)->update
+	harga::where('id_harga',$request->id)->update
 	([
 		
 		'nama_pangan' => $request->nama_pangan,
@@ -55,7 +55,7 @@ class hargaController extends Controller
 	public function hapus($id)
 	{
 	// menghapus data harga berdasarkan id yang dipilih
-	DB::table('harga')->where('id_harga',$id)->delete();
+	harga::where('id_harga',$id)->delete();
 	// alihkan halaman ke halaman pegawai
 	return redirect('/home');
 	}
